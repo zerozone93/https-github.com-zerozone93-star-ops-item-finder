@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Ops Item Finder Mockup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background-glow background-glow-left"></div>
+    <div class="background-glow background-glow-right"></div>
+
+    <main class="app-shell">
+      <header class="topbar panel">
+        <div>
+          <p class="eyebrow">STAR OPS NETWORK</p>
+          <h1>Item Finder</h1>
+        </div>
+
+        <div class="topbar-actions">
+          <span class="status-pill">Live trade feed</span>
+          <button class="ghost-button" type="button">Sync inventory</button>
+        </div>
+      </header>
+
+      <section class="hero panel">
+        <div class="hero-copy">
+          <p class="eyebrow">Clean command view</p>
+          <h2>Find gear, cargo, and upgrades with less clutter.</h2>
+          <p class="muted">
+            A cleaner game-style layout focused on fast scanning, clear prices,
+            and location visibility for pilots in the verse.
+          </p>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-label">Tracked items</span>
+            <strong>2,184</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Stations online</span>
+            <strong>47</strong>
+          </div>
+          <div class="stat-card accent">
+            <span class="stat-label">Best margin</span>
+            <strong>+18%</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <aside class="panel sidebar">
+          <div class="search-block">
+            <label class="section-label" for="item-search">Search items</label>
+            <input
+              id="item-search"
+              type="search"
+              placeholder="Railgun, MedPen, Titanium..."
+            />
+          </div>
+
+          <div class="filter-block">
+            <span class="section-label">Item class</span>
+            <div class="chip-group">
+              <button class="chip active" type="button">All</button>
+              <button class="chip" type="button">Weapons</button>
+              <button class="chip" type="button">Armor</button>
+              <button class="chip" type="button">Medical</button>
+              <button class="chip" type="button">Components</button>
+            </div>
+          </div>
+
+          <div class="filter-block">
+            <span class="section-label">Region</span>
+            <div class="list-card">
+              <label><input type="checkbox" checked /> Stanton</label>
+              <label><input type="checkbox" checked /> Pyro</label>
+              <label><input type="checkbox" /> Orbitals only</label>
+              <label><input type="checkbox" /> Ground settlements</label>
+            </div>
+          </div>
+
+          <div class="filter-block">
+            <span class="section-label">Priority intel</span>
+            <div class="list-card compact">
+              <div>
+                <span class="muted">Cheapest route</span>
+                <strong>ARC-L1 → Area18</strong>
+              </div>
+              <div>
+                <span class="muted">Fastest pickup</span>
+                <strong>Port Tressler</strong>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <section class="results">
+          <div class="panel results-toolbar">
+            <div>
+              <p class="eyebrow">Search results</p>
+              <h3>High-demand items near Stanton hubs</h3>
+            </div>
+            <button class="primary-button" type="button">Plot route</button>
+          </div>
+
+          <div class="result-grid">
+            <article class="panel result-card featured">
+              <div class="result-meta">
+                <span class="tag">Best match</span>
+                <span class="muted">Weapon attachment</span>
+              </div>
+              <h4>Behring P8-AR Scope Mk II</h4>
+              <p class="muted">
+                In stock at New Babbage Commons with strong resale demand at
+                orbital shops.
+              </p>
+              <dl class="metrics">
+                <div>
+                  <dt>Buy</dt>
+                  <dd>1,950 aUEC</dd>
+                </div>
+                <div>
+                  <dt>Sell</dt>
+                  <dd>2,280 aUEC</dd>
+                </div>
+                <div>
+                  <dt>Stock</dt>
+                  <dd>43 units</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="panel result-card">
+              <div class="result-meta">
+                <span class="tag">Medical</span>
+                <span class="muted">Fast pickup</span>
+              </div>
+              <h4>Greycat MedPen Twin Pack</h4>
+              <p class="muted">Port Tressler clinic kiosk • refreshed 2m ago</p>
+              <dl class="metrics">
+                <div>
+                  <dt>Buy</dt>
+                  <dd>220 aUEC</dd>
+                </div>
+                <div>
+                  <dt>Demand</dt>
+                  <dd>High</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="panel result-card">
+              <div class="result-meta">
+                <span class="tag">Commodity</span>
+                <span class="muted">Trade lane</span>
+              </div>
+              <h4>Titanium Freight Crate</h4>
+              <p class="muted">Area18 TDD • margin spike detected on Hurston</p>
+              <dl class="metrics">
+                <div>
+                  <dt>Buy</dt>
+                  <dd>7.92 aUEC/u</dd>
+                </div>
+                <div>
+                  <dt>Margin</dt>
+                  <dd>+18%</dd>
+                </div>
+              </dl>
+            </article>
+          </div>
+
+          <article class="panel detail-card">
+            <div class="detail-header">
+              <div>
+                <p class="eyebrow">Selected item</p>
+                <h3>Kastak Arms Devastator Shotgun</h3>
+              </div>
+              <span class="status-pill">12 shops reporting</span>
+            </div>
+
+            <div class="detail-grid">
+              <div class="detail-block">
+                <span class="section-label">Best local buy</span>
+                <strong>Orison Crusader Showroom</strong>
+                <p class="muted">2,450 aUEC • 19 units • updated 5m ago</p>
+              </div>
+              <div class="detail-block">
+                <span class="section-label">Recommended resale</span>
+                <strong>GrimHEX Weapons Depot</strong>
+                <p class="muted">Projected return 2,880 aUEC</p>
+              </div>
+              <div class="detail-block">
+                <span class="section-label">Route note</span>
+                <strong>Low traffic window active</strong>
+                <p class="muted">Shortest quantum chain through Cellin relay.</p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
