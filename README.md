@@ -1,2 +1,17 @@
-# https-github.com-zerozone93-star-ops-item-finder
-star citizen helper for people in the verse to find what you need 
+# Star Ops Item Finder
+
+Star Citizen helper to find what you need in the verse.
+
+## Run the app
+
+```bash
+npm start
+```
+
+Then open `http://localhost:3000`.
+
+## Run tests
+
+```bash
+npm test
+```
