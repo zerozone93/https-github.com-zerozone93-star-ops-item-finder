@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Ops Item Finder</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Star Ops Item Finder</p>
+        <h1>Find gear and supplies across the verse.</h1>
+        <p class="subtitle">
+          Search a starter inventory by item, category, or location.
+        </p>
+      </section>
+
+      <section class="controls">
+        <form id="search-form" class="search-form">
+          <label for="query">Search</label>
+          <input id="query" name="query" type="search" placeholder="MedPen, armor, Area18..." />
+
+          <label for="category">Category</label>
+          <select id="category" name="category">
+            <option value="">All categories</option>
+            <option value="Medical">Medical</option>
+            <option value="Utility">Utility</option>
+            <option value="Weapons">Weapons</option>
+            <option value="Armor">Armor</option>
+            <option value="Supplies">Supplies</option>
+          </select>
+
+          <label for="location">Location</label>
+          <select id="location" name="location">
+            <option value="">All locations</option>
+            <option value="Port Tressler">Port Tressler</option>
+            <option value="Area18">Area18</option>
+            <option value="New Babbage">New Babbage</option>
+            <option value="Lorville">Lorville</option>
+            <option value="Orison">Orison</option>
+            <option value="Port Olisar">Port Olisar</option>
+          </select>
+
+          <button type="submit">Find items</button>
+        </form>
+      </section>
+
+      <section class="results">
+        <div class="results-header">
+          <h2>Available items</h2>
+          <p id="results-count"></p>
+        </div>
+        <ul id="results-list" class="results-list"></ul>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
