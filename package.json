@@ -1,7 +1,7 @@
 {
   "name": "star-ops-item-finder",
   "version": "1.0.0",
-  "description": "Star Citizen helper for people in the verse to find what you need",
+  "description": "Star Citizen helper to find what you need in the verse",
   "scripts": {
     "test": "echo \"No tests configured\" && exit 0"
   },
