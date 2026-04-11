@@ -2,14 +2,15 @@
 
 Star Citizen helper for people in the verse to find what you need.
 
-## Cleaner game-style UI mockup
+## Local test environment
 
-This repository now includes a static HTML/CSS mockup for a cleaner game-style item finder interface, plus a small Node backend for serving the mockup, a normalized Star Citizen catalog, and optional remote data connectors.
+This repository now includes a working local browser app for a cleaner game-style item finder interface, plus a small Node backend for serving the app, a normalized Star Citizen catalog, and optional remote data connectors.
 
 ### Open locally
 
 - `npm start` runs the backend at `http://127.0.0.1:3000`
-- The backend serves the existing static frontend and JSON API endpoints
+- Open `http://127.0.0.1:3000` in a browser to use the test environment
+- The frontend loads live data from the backend APIs so you can search items, change filters, inspect availability, and review crafting/mining/component details without publishing the app
 
 ### Run tests
 
@@ -18,7 +19,7 @@ This repository now includes a static HTML/CSS mockup for a cleaner game-style i
 
 ### App data
 
-- `data/app-data.json` contains the structured app content and UI data for the current mockup.
+- `data/app-data.json` contains the structured app content and UI copy for the local test environment.
 - `data/star-citizen-catalog.json` contains the canonical local catalog for items, locations, mining, crafting, and components.
 
 ### Catalog model
@@ -52,6 +53,6 @@ Remote feeds should return JSON arrays or `{ data: [...] }` payloads. The API me
 - `GET /api/sources` returns connector status for the local catalog plus optional remote data sources
 - `GET /api/items` returns normalized item records, with optional `category`, `locationId`, and `q` filters
 - `GET /api/locations` returns normalized locations, with optional `itemId`, `service`, `system`, and `q` filters
-- `GET /api/components` returns normalized ship components, with optional `type`, `grade`, and `q` filters
+- `GET /api/components` returns normalized ship components, with optional `itemId`, `type`, `grade`, and `q` filters
 - `GET /api/crafting` returns crafting recipes, with optional `outputItemId` and `facility` filters
 - `GET /api/mining` returns mining resources, with optional `itemId`, `resourceType`, `region`, and `q` filters

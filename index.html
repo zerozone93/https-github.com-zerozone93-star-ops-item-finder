@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Star Ops Item Finder Mockup</title>
+    <title>Star Ops Item Finder</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
   </head>
   <body>
     <div class="background-glow background-glow-left"></div>
@@ -13,38 +14,38 @@
     <main class="app-shell">
       <header class="topbar panel">
         <div>
-          <p class="eyebrow">STAR OPS NETWORK</p>
-          <h1>Item Finder</h1>
+          <p class="eyebrow" id="network-name">STAR OPS NETWORK</p>
+          <h1 id="app-name">Item Finder</h1>
         </div>
 
         <div class="topbar-actions">
-          <span class="status-pill">Live trade feed</span>
-          <button class="ghost-button" type="button">Sync inventory</button>
+          <span class="status-pill" id="live-status">Connecting catalog</span>
+          <button class="ghost-button" id="sync-button" type="button">Sync inventory</button>
         </div>
       </header>
 
       <section class="hero panel">
         <div class="hero-copy">
-          <p class="eyebrow">Clean command view</p>
-          <h2>Find gear, cargo, and upgrades with less clutter.</h2>
-          <p class="muted">
-            A cleaner game-style layout focused on fast scanning, clear prices,
-            and location visibility for pilots in the verse.
+          <p class="eyebrow" id="hero-eyebrow">Test environment</p>
+          <h2 id="hero-title">Browse the live test catalog and inspect real app behavior.</h2>
+          <p class="muted" id="hero-description">
+            Search items, filter the catalog, inspect location availability, and verify
+            mining, crafting, and component data in one place.
           </p>
         </div>
 
-        <div class="hero-stats">
+        <div class="hero-stats" id="hero-stats">
           <div class="stat-card">
             <span class="stat-label">Tracked items</span>
-            <strong>2,184</strong>
+            <strong>--</strong>
           </div>
           <div class="stat-card">
             <span class="stat-label">Stations online</span>
-            <strong>47</strong>
+            <strong>--</strong>
           </div>
           <div class="stat-card accent">
             <span class="stat-label">Best margin</span>
-            <strong>+18%</strong>
+            <strong>--</strong>
           </div>
         </div>
       </section>
@@ -56,41 +57,37 @@
             <input
               id="item-search"
               type="search"
-              placeholder="Railgun, MedPen, Titanium..."
+              placeholder="Railgun, MedPen, Quantanium..."
             />
           </div>
 
           <div class="filter-block">
             <span class="section-label">Item class</span>
-            <div class="chip-group">
-              <button class="chip active" type="button">All</button>
-              <button class="chip" type="button">Weapons</button>
-              <button class="chip" type="button">Armor</button>
-              <button class="chip" type="button">Medical</button>
-              <button class="chip" type="button">Components</button>
+            <div class="chip-group" id="category-filters">
+              <button class="chip active" data-category="all" type="button">All</button>
+              <button class="chip" data-category="weapons" type="button">Weapons</button>
+              <button class="chip" data-category="armor" type="button">Armor</button>
+              <button class="chip" data-category="medical" type="button">Medical</button>
+              <button class="chip" data-category="components" type="button">Components</button>
             </div>
           </div>
 
           <div class="filter-block">
-            <span class="section-label">Region</span>
-            <div class="list-card">
-              <label><input type="checkbox" checked /> Stanton</label>
-              <label><input type="checkbox" checked /> Pyro</label>
-              <label><input type="checkbox" /> Orbitals only</label>
-              <label><input type="checkbox" /> Ground settlements</label>
+            <span class="section-label">Location service</span>
+            <div class="list-card" id="service-filters">
+              <label class="control-option">
+                <input checked type="checkbox" value="all" />
+                <span>All services</span>
+              </label>
             </div>
           </div>
 
           <div class="filter-block">
             <span class="section-label">Priority intel</span>
-            <div class="list-card compact">
+            <div class="list-card compact" id="priority-intel">
               <div>
-                <span class="muted">Cheapest route</span>
-                <strong>ARC-L1 → Area18</strong>
-              </div>
-              <div>
-                <span class="muted">Fastest pickup</span>
-                <strong>Port Tressler</strong>
+                <span class="muted">Loading</span>
+                <strong>Calculating best routes</strong>
               </div>
             </div>
           </div>
@@ -100,103 +97,67 @@
           <div class="panel results-toolbar">
             <div>
               <p class="eyebrow">Search results</p>
-              <h3>High-demand items near Stanton hubs</h3>
-            </div>
-            <button class="primary-button" type="button">Plot route</button>
-          </div>
-
-          <div class="result-grid">
-            <article class="panel result-card featured">
-              <div class="result-meta">
-                <span class="tag">Best match</span>
-                <span class="muted">Weapon attachment</span>
-              </div>
-              <h4>Behring P8-AR Scope Mk II</h4>
-              <p class="muted">
-                In stock at New Babbage Commons with strong resale demand at
-                orbital shops.
+              <h3 id="results-title">Loading catalog…</h3>
+              <p class="muted" id="results-summary">
+                Fetching items, locations, mining, crafting, and component data.
               </p>
-              <dl class="metrics">
-                <div>
-                  <dt>Buy</dt>
-                  <dd>1,950 aUEC</dd>
-                </div>
-                <div>
-                  <dt>Sell</dt>
-                  <dd>2,280 aUEC</dd>
-                </div>
-                <div>
-                  <dt>Stock</dt>
-                  <dd>43 units</dd>
-                </div>
-              </dl>
-            </article>
-
-            <article class="panel result-card">
-              <div class="result-meta">
-                <span class="tag">Medical</span>
-                <span class="muted">Fast pickup</span>
-              </div>
-              <h4>Greycat MedPen Twin Pack</h4>
-              <p class="muted">Port Tressler clinic kiosk • refreshed 2m ago</p>
-              <dl class="metrics">
-                <div>
-                  <dt>Buy</dt>
-                  <dd>220 aUEC</dd>
-                </div>
-                <div>
-                  <dt>Demand</dt>
-                  <dd>High</dd>
-                </div>
-              </dl>
-            </article>
-
-            <article class="panel result-card">
-              <div class="result-meta">
-                <span class="tag">Commodity</span>
-                <span class="muted">Trade lane</span>
-              </div>
-              <h4>Titanium Freight Crate</h4>
-              <p class="muted">Area18 TDD • margin spike detected on Hurston</p>
-              <dl class="metrics">
-                <div>
-                  <dt>Buy</dt>
-                  <dd>7.92 aUEC/u</dd>
-                </div>
-                <div>
-                  <dt>Margin</dt>
-                  <dd>+18%</dd>
-                </div>
-              </dl>
-            </article>
+            </div>
+            <button class="primary-button" id="focus-selected" type="button">Focus selected item</button>
           </div>
 
-          <article class="panel detail-card">
+          <div class="panel feedback-banner" id="feedback-banner" role="status">
+            Initializing Star Ops test environment…
+          </div>
+
+          <div class="result-grid" id="result-grid"></div>
+
+          <article class="panel detail-card" id="detail-card">
             <div class="detail-header">
               <div>
                 <p class="eyebrow">Selected item</p>
-                <h3>Kastak Arms Devastator Shotgun</h3>
+                <h3 id="selected-item-name">Choose an item</h3>
+                <p class="muted" id="selected-item-description">
+                  Select a result to inspect shop availability, component telemetry,
+                  crafting requirements, and mining support data.
+                </p>
               </div>
-              <span class="status-pill">12 shops reporting</span>
+              <span class="status-pill" id="selected-item-status">Awaiting selection</span>
             </div>
 
-            <div class="detail-grid">
+            <div class="detail-grid" id="detail-grid">
               <div class="detail-block">
                 <span class="section-label">Best local buy</span>
-                <strong>Orison Crusader Showroom</strong>
-                <p class="muted">2,450 aUEC • 19 units • updated 5m ago</p>
-              </div>
-              <div class="detail-block">
-                <span class="section-label">Recommended resale</span>
-                <strong>GrimHEX Weapons Depot</strong>
-                <p class="muted">Projected return 2,880 aUEC</p>
-              </div>
-              <div class="detail-block">
-                <span class="section-label">Route note</span>
-                <strong>Low traffic window active</strong>
-                <p class="muted">Shortest quantum chain through Cellin relay.</p>
+                <strong>Waiting for catalog</strong>
+                <p class="muted">Sync the app to load route and pricing intel.</p>
               </div>
             </div>
+
+            <section class="detail-support-grid">
+              <article class="panel-subtle">
+                <p class="section-label">Location availability</p>
+                <div class="stack-list" id="location-list"></div>
+              </article>
+
+              <article class="panel-subtle">
+                <p class="section-label">Component telemetry</p>
+                <div class="stack-list" id="component-list"></div>
+              </article>
+
+              <article class="panel-subtle">
+                <p class="section-label">Crafting chain</p>
+                <div class="stack-list" id="crafting-list"></div>
+              </article>
+
+              <article class="panel-subtle">
+                <p class="section-label">Mining intel</p>
+                <div class="stack-list" id="mining-list"></div>
+              </article>
+
+              <article class="panel-subtle">
+                <p class="section-label">Connector status</p>
+                <div class="stack-list" id="source-list"></div>
+              </article>
+            </section>
           </article>
         </section>
       </section>

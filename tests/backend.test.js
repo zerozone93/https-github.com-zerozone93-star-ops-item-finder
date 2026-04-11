@@ -105,16 +105,19 @@ test("serves component, crafting, mining, and source endpoints", async () => {
 });
 
 test("serves the existing static frontend through the backend", async () => {
-  const [indexResponse, stylesResponse] = await Promise.all([
+  const [indexResponse, stylesResponse, scriptResponse] = await Promise.all([
     fetch(`${baseUrl}/`),
     fetch(`${baseUrl}/styles.css`),
+    fetch(`${baseUrl}/app.js`),
   ]);
 
   assert.equal(indexResponse.status, 200);
   assert.equal(stylesResponse.status, 200);
+  assert.equal(scriptResponse.status, 200);
   assert.match(indexResponse.headers.get("content-type"), /^text\/html/);
   assert.match(stylesResponse.headers.get("content-type"), /^text\/css/);
-  assert.match(await indexResponse.text(), /<title>Star Ops Item Finder Mockup<\/title>/);
+  assert.match(scriptResponse.headers.get("content-type"), /javascript/);
+  assert.match(await indexResponse.text(), /<title>Star Ops Item Finder<\/title>/);
 });
 
 test("rejects unknown and unsafe paths", async () => {

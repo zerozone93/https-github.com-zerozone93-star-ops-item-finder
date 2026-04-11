@@ -2,9 +2,9 @@
   "app": {
     "network": "STAR OPS NETWORK",
     "name": "Item Finder",
-    "title": "Star Ops Item Finder Mockup",
-    "tagline": "Find gear, cargo, and upgrades with less clutter.",
-    "description": "A cleaner game-style layout focused on fast scanning, clear prices, and location visibility for pilots in the verse.",
+    "title": "Star Ops Item Finder Test Environment",
+    "tagline": "Find gear, cargo, and upgrades with real interactions.",
+    "description": "A local test environment for validating search, filters, pricing, and normalized Star Citizen data flows.",
     "status": "Live trade feed",
     "primaryAction": {
       "label": "Sync inventory",

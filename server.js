@@ -8,6 +8,7 @@ const catalogService = createCatalogService(repoRoot);
 const staticFiles = new Map([
   ["/", { filePath: path.join(repoRoot, "index.html"), contentType: "text/html; charset=utf-8" }],
   ["/index.html", { filePath: path.join(repoRoot, "index.html"), contentType: "text/html; charset=utf-8" }],
+  ["/app.js", { filePath: path.join(repoRoot, "app.js"), contentType: "application/javascript; charset=utf-8" }],
   ["/styles.css", { filePath: path.join(repoRoot, "styles.css"), contentType: "text/css; charset=utf-8" }],
   ["/data/app-data.json", { filePath: path.join(repoRoot, "data", "app-data.json"), contentType: "application/json; charset=utf-8" }],
   ["/data/star-citizen-catalog.json", { filePath: path.join(repoRoot, "data", "star-citizen-catalog.json"), contentType: "application/json; charset=utf-8" }],
