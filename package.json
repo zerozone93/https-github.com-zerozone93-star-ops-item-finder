@@ -1,0 +1,8 @@
+{
+  "name": "star-ops-item-finder",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage"
+  }
+}

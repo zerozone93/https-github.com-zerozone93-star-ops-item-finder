@@ -9,3 +9,8 @@ This repository now includes a static HTML/CSS mockup for a cleaner game-style i
 ### Open locally
 
 Open `index.html` in a browser.
+
+### Run tests
+
+- `npm test` runs the HTML/CSS regression checks.
+- `npm run test:coverage` runs the same suite with Node's built-in coverage output.
