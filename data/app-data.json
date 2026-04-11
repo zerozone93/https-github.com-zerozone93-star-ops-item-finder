@@ -1,0 +1,184 @@
+{
+  "app": {
+    "network": "STAR OPS NETWORK",
+    "name": "Item Finder",
+    "title": "Star Ops Item Finder Mockup",
+    "tagline": "Find gear, cargo, and upgrades with less clutter.",
+    "description": "A cleaner game-style layout focused on fast scanning, clear prices, and location visibility for pilots in the verse.",
+    "status": "Live trade feed",
+    "primaryAction": {
+      "label": "Sync inventory",
+      "type": "button"
+    }
+  },
+  "hero": {
+    "eyebrow": "Clean command view",
+    "stats": [
+      {
+        "label": "Tracked items",
+        "value": 2184
+      },
+      {
+        "label": "Stations online",
+        "value": 47
+      },
+      {
+        "label": "Best margin",
+        "value": "+18%",
+        "accent": true
+      }
+    ]
+  },
+  "sidebar": {
+    "search": {
+      "label": "Search items",
+      "placeholder": "Railgun, MedPen, Titanium..."
+    },
+    "itemClasses": {
+      "label": "Item class",
+      "options": [
+        {
+          "label": "All",
+          "active": true
+        },
+        {
+          "label": "Weapons",
+          "active": false
+        },
+        {
+          "label": "Armor",
+          "active": false
+        },
+        {
+          "label": "Medical",
+          "active": false
+        },
+        {
+          "label": "Components",
+          "active": false
+        }
+      ]
+    },
+    "regions": {
+      "label": "Region",
+      "options": [
+        {
+          "label": "Stanton",
+          "checked": true
+        },
+        {
+          "label": "Pyro",
+          "checked": true
+        },
+        {
+          "label": "Orbitals only",
+          "checked": false
+        },
+        {
+          "label": "Ground settlements",
+          "checked": false
+        }
+      ]
+    },
+    "priorityIntel": {
+      "label": "Priority intel",
+      "entries": [
+        {
+          "label": "Cheapest route",
+          "value": "ARC-L1 → Area18"
+        },
+        {
+          "label": "Fastest pickup",
+          "value": "Port Tressler"
+        }
+      ]
+    }
+  },
+  "results": {
+    "eyebrow": "Search results",
+    "title": "High-demand items near Stanton hubs",
+    "primaryAction": {
+      "label": "Plot route",
+      "type": "button"
+    },
+    "cards": [
+      {
+        "tag": "Best match",
+        "context": "Weapon attachment",
+        "name": "Behring P8-AR Scope Mk II",
+        "description": "In stock at New Babbage Commons with strong resale demand at orbital shops.",
+        "featured": true,
+        "metrics": [
+          {
+            "label": "Buy",
+            "value": "1,950 aUEC"
+          },
+          {
+            "label": "Sell",
+            "value": "2,280 aUEC"
+          },
+          {
+            "label": "Stock",
+            "value": "43 units"
+          }
+        ]
+      },
+      {
+        "tag": "Medical",
+        "context": "Fast pickup",
+        "name": "Greycat MedPen Twin Pack",
+        "description": "Port Tressler clinic kiosk • refreshed 2m ago",
+        "featured": false,
+        "metrics": [
+          {
+            "label": "Buy",
+            "value": "220 aUEC"
+          },
+          {
+            "label": "Demand",
+            "value": "High"
+          }
+        ]
+      },
+      {
+        "tag": "Commodity",
+        "context": "Trade lane",
+        "name": "Titanium Freight Crate",
+        "description": "Area18 TDD • margin spike detected on Hurston",
+        "featured": false,
+        "metrics": [
+          {
+            "label": "Buy",
+            "value": "7.92 aUEC/u"
+          },
+          {
+            "label": "Margin",
+            "value": "+18%"
+          }
+        ]
+      }
+    ]
+  },
+  "selectedItem": {
+    "eyebrow": "Selected item",
+    "name": "Kastak Arms Devastator Shotgun",
+    "status": "12 shops reporting",
+    "details": [
+      {
+        "label": "Best local buy",
+        "title": "Orison Crusader Showroom",
+        "description": "2,450 aUEC • 19 units • updated 5m ago"
+      },
+      {
+        "label": "Recommended resale",
+        "title": "GrimHEX Weapons Depot",
+        "description": "Projected return 2,880 aUEC"
+      },
+      {
+        "label": "Route note",
+        "title": "Low traffic window active",
+        "description": "Shortest quantum chain through Cellin relay."
+      }
+    ]
+  }
+}

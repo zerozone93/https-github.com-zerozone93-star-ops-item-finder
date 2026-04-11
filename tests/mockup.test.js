@@ -6,6 +6,9 @@ const path = require("node:path");
 const repoRoot = path.resolve(__dirname, "..");
 const html = fs.readFileSync(path.join(repoRoot, "index.html"), "utf8");
 const css = fs.readFileSync(path.join(repoRoot, "styles.css"), "utf8");
+const appData = JSON.parse(
+  fs.readFileSync(path.join(repoRoot, "data", "app-data.json"), "utf8"),
+);
 
 function countMatches(source, pattern) {
   return [...source.matchAll(pattern)].length;
@@ -64,4 +67,17 @@ test("uses grid layouts and responsive breakpoints for smaller viewports", () =>
   assert.match(css, /@media \(max-width: 960px\)\s*\{[^}]*grid-template-columns:\s*1fr;/s);
   assert.match(css, /@media \(max-width: 640px\)\s*\{[\s\S]*\.topbar-actions\s*\{[^}]*width:\s*100%;/s);
   assert.match(css, /@media \(max-width: 640px\)\s*\{[\s\S]*\.ghost-button,\s*\.primary-button\s*\{[^}]*width:\s*100%;/s);
+});
+
+test("provides reusable app JSON with the required UI content", () => {
+  assert.equal(appData.app.network, "STAR OPS NETWORK");
+  assert.equal(appData.app.name, "Item Finder");
+  assert.equal(appData.hero.stats.length, 3);
+  assert.equal(appData.sidebar.itemClasses.options.length, 5);
+  assert.equal(appData.sidebar.regions.options.length, 4);
+  assert.equal(appData.sidebar.priorityIntel.entries.length, 2);
+  assert.equal(appData.results.cards.length, 3);
+  assert.equal(appData.results.cards.filter((card) => card.featured).length, 1);
+  assert.equal(appData.selectedItem.details.length, 3);
+  assert.equal(appData.results.primaryAction.label, "Plot route");
 });

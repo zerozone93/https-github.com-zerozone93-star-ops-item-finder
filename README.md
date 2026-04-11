@@ -14,3 +14,7 @@ Open `index.html` in a browser.
 
 - `npm test` runs the HTML/CSS regression checks.
 - `npm run test:coverage` runs the same suite with Node's built-in coverage output.
+
+### App data
+
+- `/home/runner/work/https-github.com-zerozone93-star-ops-item-finder/https-github.com-zerozone93-star-ops-item-finder/data/app-data.json` contains the structured app content and UI data for the current mockup.
