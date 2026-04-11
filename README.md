@@ -8,4 +8,4 @@ This repository now includes a static HTML/CSS mockup for a cleaner game-style i
 
 ### Open locally
 
-Open `/home/runner/work/https-github.com-zerozone93-star-ops-item-finder/https-github.com-zerozone93-star-ops-item-finder/index.html` in a browser.
+Open `index.html` in a browser.
