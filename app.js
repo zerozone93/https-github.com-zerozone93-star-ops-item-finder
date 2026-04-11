@@ -736,7 +736,6 @@
     elements.heroEyebrow = byId("hero-eyebrow");
     elements.heroStats = byId("hero-stats");
     elements.heroTitle = byId("hero-title");
-    elements.itemSearch = byId("item-search");
     elements.liveStatus = byId("live-status");
     elements.locationList = byId("location-list");
     elements.miningList = byId("mining-list");
