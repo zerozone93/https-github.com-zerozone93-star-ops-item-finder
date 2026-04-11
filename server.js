@@ -37,6 +37,20 @@ async function sendStaticFile(response, asset) {
   }
 }
 
+function isSafePathname(pathname) {
+  try {
+    const decodedPath = decodeURIComponent(pathname);
+
+    if (decodedPath !== path.posix.normalize(decodedPath)) {
+      return false;
+    }
+
+    return !decodedPath.split("/").includes("..");
+  } catch {
+    return false;
+  }
+}
+
 function createServer() {
   return http.createServer(async (request, response) => {
     const url = new URL(request.url || "/", "http://127.0.0.1");
@@ -61,7 +75,7 @@ function createServer() {
       return;
     }
 
-    if (url.pathname.includes("..")) {
+    if (!isSafePathname(url.pathname)) {
       sendJson(response, 404, { error: "Not found." });
       return;
     }

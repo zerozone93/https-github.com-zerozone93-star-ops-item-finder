@@ -12,10 +12,6 @@ test.before(async () => {
 });
 
 test.after(async () => {
-  if (!server) {
-    return;
-  }
-
   await new Promise((resolve, reject) => {
     server.close((error) => {
       if (error) {
