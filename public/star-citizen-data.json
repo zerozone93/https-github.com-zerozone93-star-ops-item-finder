@@ -1,0 +1,900 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-01-01",
+    "patch": "3.23",
+    "note": "Sample data for Star Ops Item Finder. Data is illustrative and may not reflect exact in-game values."
+  },
+  "resources": [
+    {
+      "id": "quantanium",
+      "name": "Quantanium",
+      "type": "quantum",
+      "description": "An incredibly rare and highly unstable mineral found in asteroid fields. Quantanium is the most valuable minable resource in the 'verse, but it decays rapidly after extraction. Time is of the essence when transporting this volatile material.",
+      "rarity": "very_rare",
+      "locationIds": ["yela-belt", "aaron-halo", "delamar"],
+      "miningMethodIds": ["ship-mining"],
+      "toolIds": ["mole-laser", "prospector-laser"],
+      "vehicleIds": ["prospector", "mole"],
+      "recipeIds": ["quantanium-processing"],
+      "patch": "3.23"
+    },
+    {
+      "id": "bexalite",
+      "name": "Bexalite",
+      "type": "mineral",
+      "description": "A rare crystalline mineral prized for its unique energy-conducting properties. Bexalite is used in advanced electronics and ship components. Found primarily in asteroid belts and certain rocky moons.",
+      "rarity": "rare",
+      "locationIds": ["yela-belt", "aaron-halo"],
+      "miningMethodIds": ["ship-mining", "roc-mining"],
+      "toolIds": ["mole-laser", "prospector-laser", "roc-rig"],
+      "vehicleIds": ["prospector", "mole", "roc"],
+      "recipeIds": ["bexalite-component"],
+      "patch": "3.23"
+    },
+    {
+      "id": "taranite",
+      "name": "Taranite",
+      "type": "metal",
+      "description": "A dense metallic ore with exceptional structural integrity. Taranite is the backbone of ship hull construction and advanced armor plating. It's found in moderate quantities in asteroid belts throughout the Stanton system.",
+      "rarity": "uncommon",
+      "locationIds": ["yela-belt", "aaron-halo", "cellin"],
+      "miningMethodIds": ["ship-mining", "roc-mining"],
+      "toolIds": ["mole-laser", "prospector-laser", "roc-rig"],
+      "vehicleIds": ["prospector", "mole", "roc"],
+      "recipeIds": ["taranite-plate"],
+      "patch": "3.23"
+    },
+    {
+      "id": "laranite",
+      "name": "Laranite",
+      "type": "mineral",
+      "description": "A luminescent blue mineral used in energy systems and power cells. Laranite's natural crystalline structure makes it ideal for power regulation and is highly sought after by manufacturers.",
+      "rarity": "rare",
+      "locationIds": ["daymar", "cellin", "aaron-halo"],
+      "miningMethodIds": ["ship-mining", "roc-mining", "fps-mining"],
+      "toolIds": ["mole-laser", "prospector-laser", "roc-rig", "multitool-orex"],
+      "vehicleIds": ["prospector", "mole", "roc"],
+      "recipeIds": [],
+      "patch": "3.23"
+    },
+    {
+      "id": "agricium",
+      "name": "Agricium",
+      "type": "metal",
+      "description": "A versatile metal found in surface deposits and shallow subsurface veins. Agricium has excellent thermal properties and is used in cooling systems and heat management components.",
+      "rarity": "uncommon",
+      "locationIds": ["daymar", "cellin", "microtech"],
+      "miningMethodIds": ["roc-mining", "fps-mining"],
+      "toolIds": ["roc-rig", "multitool-orex"],
+      "vehicleIds": ["roc"],
+      "recipeIds": ["agricium-component"],
+      "patch": "3.23"
+    },
+    {
+      "id": "titanite",
+      "name": "Titanite",
+      "type": "mineral",
+      "description": "A common but useful mineral containing titanium compounds. Titanite is widely used in basic manufacturing and serves as a foundation material for many crafted items.",
+      "rarity": "common",
+      "locationIds": ["daymar", "cellin", "yela", "microtech"],
+      "miningMethodIds": ["roc-mining", "fps-mining"],
+      "toolIds": ["roc-rig", "multitool-orex"],
+      "vehicleIds": ["roc"],
+      "recipeIds": ["titanite-alloy"],
+      "patch": "3.23"
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "type": "metal",
+      "description": "Pure gold ore found in asteroid deposits and planetary caves. While not the most exotic material, gold commands a reliable price and is used in high-end electronics and trade.",
+      "rarity": "uncommon",
+      "locationIds": ["yela-belt", "daymar", "hurston"],
+      "miningMethodIds": ["ship-mining", "roc-mining", "fps-mining"],
+      "toolIds": ["mole-laser", "prospector-laser", "roc-rig", "multitool-orex"],
+      "vehicleIds": ["prospector", "mole", "roc"],
+      "recipeIds": [],
+      "patch": "3.23"
+    },
+    {
+      "id": "copper",
+      "name": "Copper",
+      "type": "metal",
+      "description": "A highly common metal found throughout the Stanton system. Copper is essential for basic electronics and wiring, making it a staple of industrial manufacturing.",
+      "rarity": "common",
+      "locationIds": ["daymar", "cellin", "yela", "hurston", "arccorp"],
+      "miningMethodIds": ["roc-mining", "fps-mining"],
+      "toolIds": ["roc-rig", "multitool-orex"],
+      "vehicleIds": ["roc"],
+      "recipeIds": [],
+      "patch": "3.23"
+    },
+    {
+      "id": "diamond",
+      "name": "Diamond",
+      "type": "mineral",
+      "description": "Formed under extreme pressure in asteroid interiors, diamonds found in the 'verse are of exceptional quality. Used in cutting tools, optics, and luxury goods.",
+      "rarity": "rare",
+      "locationIds": ["aaron-halo", "yela-belt"],
+      "miningMethodIds": ["ship-mining"],
+      "toolIds": ["mole-laser", "prospector-laser"],
+      "vehicleIds": ["prospector", "mole"],
+      "recipeIds": [],
+      "patch": "3.23"
+    },
+    {
+      "id": "borase",
+      "name": "Borase",
+      "type": "mineral",
+      "description": "A boron-rich mineral compound with applications in advanced materials science. Borase is found in moderate quantities and has steady demand from industrial producers.",
+      "rarity": "uncommon",
+      "locationIds": ["cellin", "yela"],
+      "miningMethodIds": ["roc-mining", "fps-mining"],
+      "toolIds": ["roc-rig", "multitool-orex"],
+      "vehicleIds": ["roc"],
+      "recipeIds": [],
+      "patch": "3.23"
+    }
+  ],
+  "locations": [
+    {
+      "id": "crusader",
+      "name": "Crusader",
+      "type": "planet",
+      "system": "Stanton",
+      "description": "A gas giant in the Stanton system and home to Crusader Industries. Its turbulent atmosphere hides valuable gas deposits, and its many moons offer diverse mining opportunities.",
+      "riskLevel": "low",
+      "resourceIds": [],
+      "vendorIds": ["omega-pro", "cousin-crows"],
+      "lootSourceIds": []
+    },
+    {
+      "id": "daymar",
+      "name": "Daymar",
+      "type": "moon",
+      "system": "Stanton",
+      "description": "A rocky desert moon orbiting Crusader. Daymar has thin atmosphere, dust storms, and rich mineral deposits on and below its surface. Popular with ROC miners for its accessible terrain.",
+      "riskLevel": "low",
+      "resourceIds": ["laranite", "agricium", "titanite", "gold", "copper"],
+      "vendorIds": ["recco-outpost-vendor"],
+      "lootSourceIds": ["cave-cache-daymar", "npc-pirates-daymar"]
+    },
+    {
+      "id": "yela",
+      "name": "Yela",
+      "type": "moon",
+      "system": "Stanton",
+      "description": "An icy moon in Crusader's orbit, Yela is notable for its sprawling asteroid belt — the Yela Belt — which is rich with rare minerals including the prized Quantanium.",
+      "riskLevel": "medium",
+      "resourceIds": ["titanite", "copper", "borase"],
+      "vendorIds": [],
+      "lootSourceIds": ["derelict-yela", "pirate-hideout-yela"]
+    },
+    {
+      "id": "yela-belt",
+      "name": "Yela Asteroid Belt",
+      "type": "asteroid_belt",
+      "system": "Stanton",
+      "description": "The asteroid belt surrounding Yela contains the highest concentrations of Quantanium and Bexalite in Stanton. Pirates frequently patrol these rocks, making mining operations dangerous.",
+      "riskLevel": "high",
+      "resourceIds": ["quantanium", "bexalite", "taranite", "gold", "diamond"],
+      "vendorIds": [],
+      "lootSourceIds": ["pirate-patrol-yela-belt"]
+    },
+    {
+      "id": "cellin",
+      "name": "Cellin",
+      "type": "moon",
+      "system": "Stanton",
+      "description": "A volcanically active moon with rich mineral deposits exposed by geological activity. The hostile environment yields great rewards for prepared miners.",
+      "riskLevel": "medium",
+      "resourceIds": ["taranite", "laranite", "agricium", "titanite", "copper", "borase"],
+      "vendorIds": [],
+      "lootSourceIds": ["cave-cache-cellin"]
+    },
+    {
+      "id": "microtech",
+      "name": "microTech",
+      "type": "planet",
+      "system": "Stanton",
+      "description": "A frozen planet home to the microTech corporation. Its icy surface and subsurface caves contain mineral deposits, and its cities offer extensive shopping for equipment.",
+      "riskLevel": "low",
+      "resourceIds": ["agricium", "titanite"],
+      "vendorIds": ["new-babbage-vendor"],
+      "lootSourceIds": []
+    },
+    {
+      "id": "arccorp",
+      "name": "ArcCorp",
+      "type": "planet",
+      "system": "Stanton",
+      "description": "An entirely industrialized planet covered in city-sprawl. ArcCorp's surface is built over, but the surrounding asteroid fields and nearby locations offer mining opportunities.",
+      "riskLevel": "safe",
+      "resourceIds": ["copper"],
+      "vendorIds": ["arccorp-arms-vendor", "omega-pro-arccorp"],
+      "lootSourceIds": []
+    },
+    {
+      "id": "hurston",
+      "name": "Hurston",
+      "type": "planet",
+      "system": "Stanton",
+      "description": "A heavily polluted industrial planet owned by Hurston Dynamics. Despite its toxic atmosphere, Hurston's surface and surrounding moons have significant mineral deposits.",
+      "riskLevel": "medium",
+      "resourceIds": ["gold", "copper"],
+      "vendorIds": ["hurston-dynamics-vendor"],
+      "lootSourceIds": ["npc-security-hurston"]
+    },
+    {
+      "id": "delamar",
+      "name": "Delamar",
+      "type": "asteroid_field",
+      "system": "Stanton",
+      "description": "A hidden asteroid base in deep space. Delamar is home to outlaws and offers access to rare Quantanium deposits in the surrounding asteroid field.",
+      "riskLevel": "extreme",
+      "resourceIds": ["quantanium"],
+      "vendorIds": [],
+      "lootSourceIds": ["outlaw-cache-delamar"]
+    },
+    {
+      "id": "aaron-halo",
+      "name": "Aaron Halo",
+      "type": "asteroid_belt",
+      "system": "Stanton",
+      "description": "A massive asteroid belt stretching across the Stanton system. Aaron Halo is rich with diverse minerals and contains some of the largest minable rocks in the system.",
+      "riskLevel": "high",
+      "resourceIds": ["quantanium", "bexalite", "taranite", "laranite", "diamond"],
+      "vendorIds": [],
+      "lootSourceIds": ["pirate-patrol-aaron-halo"]
+    }
+  ],
+  "miningMethods": [
+    {
+      "id": "fps-mining",
+      "name": "FPS Mining",
+      "type": "fps",
+      "description": "Hand-held mining using a Multi-Tool equipped with a mining attachment. FPS mining allows players to extract small surface deposits and cave minerals on foot. It's the most accessible form of mining requiring only a Multi-Tool and a mining head.",
+      "toolIds": ["multitool-orex", "multitool-oremax"],
+      "vehicleIds": [],
+      "resourceIds": ["laranite", "agricium", "titanite", "gold", "copper", "borase"]
+    },
+    {
+      "id": "roc-mining",
+      "name": "ROC Mining",
+      "type": "roc",
+      "description": "Ground vehicle mining using the Argo Mole ROC. The ROC is a dedicated mining vehicle that can break down medium-sized mineral deposits on planetary surfaces. It requires a ship to transport to the surface.",
+      "toolIds": ["roc-rig"],
+      "vehicleIds": ["roc"],
+      "resourceIds": ["bexalite", "taranite", "laranite", "agricium", "titanite", "gold", "copper", "borase"]
+    },
+    {
+      "id": "ship-mining",
+      "name": "Ship Mining",
+      "type": "ship",
+      "description": "Space-based mining using dedicated mining ships equipped with mining lasers. Ship mining is required for asteroid belt operations and yields the highest-value materials including Quantanium. Requires a Prospector or MOLE.",
+      "toolIds": ["prospector-laser", "mole-laser"],
+      "vehicleIds": ["prospector", "mole"],
+      "resourceIds": ["quantanium", "bexalite", "taranite", "laranite", "gold", "diamond"]
+    }
+  ],
+  "tools": [
+    {
+      "id": "multitool-orex",
+      "name": "Multi-Tool with OreBit Head",
+      "type": "multi_tool",
+      "description": "The standard starting point for FPS mining. Combine an Argo Multi-Tool with the OreBit mining attachment to break down surface mineral deposits. Affordable and widely available.",
+      "miningMethodId": "fps-mining",
+      "resourceIds": ["laranite", "agricium", "titanite", "gold", "copper", "borase"],
+      "obtainMethod": "buy",
+      "vendorIds": ["omega-pro", "cousin-crows", "new-babbage-vendor"],
+      "price": 3600,
+      "currency": "aUEC"
+    },
+    {
+      "id": "multitool-oremax",
+      "name": "Multi-Tool with OreMax Head",
+      "type": "mining_head",
+      "description": "An upgraded mining head for the Multi-Tool with improved extraction efficiency and power. The OreMax head can break down harder mineral nodes and extract more material per charge.",
+      "miningMethodId": "fps-mining",
+      "resourceIds": ["laranite", "agricium", "titanite", "gold", "copper", "borase"],
+      "obtainMethod": "buy",
+      "vendorIds": ["omega-pro", "cousin-crows"],
+      "price": 9500,
+      "currency": "aUEC"
+    },
+    {
+      "id": "roc-rig",
+      "name": "ROC Mining Rig",
+      "type": "roc_attachment",
+      "description": "The integrated mining system of the Argo Mole ROC ground vehicle. The ROC's dual cutting arms can break down large surface deposits far beyond the capability of FPS tools. Comes pre-installed on the ROC.",
+      "miningMethodId": "roc-mining",
+      "resourceIds": ["bexalite", "taranite", "laranite", "agricium", "titanite", "gold", "copper", "borase"],
+      "obtainMethod": "buy",
+      "vendorIds": [],
+      "price": 0,
+      "currency": "aUEC"
+    },
+    {
+      "id": "prospector-laser",
+      "name": "Prospector Mining Laser",
+      "type": "ship_module",
+      "description": "The dual-laser mining system installed on the Drake Interplanetary Prospector. Designed for solo ship mining operations in asteroid belts. Includes a modular hardpoint for mining laser upgrades.",
+      "miningMethodId": "ship-mining",
+      "resourceIds": ["quantanium", "bexalite", "taranite", "laranite", "gold", "diamond"],
+      "obtainMethod": "buy",
+      "vendorIds": ["cousin-crows", "omega-pro"],
+      "price": 0,
+      "currency": "aUEC"
+    },
+    {
+      "id": "mole-laser",
+      "name": "MOLE Mining Laser",
+      "type": "ship_module",
+      "description": "The powerful triple-beam mining system on the Argo MOLE. Each turret can be crewed by a separate player, enabling team-based mining operations. Can break down the largest asteroid deposits.",
+      "miningMethodId": "ship-mining",
+      "resourceIds": ["quantanium", "bexalite", "taranite", "laranite", "gold", "diamond"],
+      "obtainMethod": "buy",
+      "vendorIds": ["cousin-crows"],
+      "price": 0,
+      "currency": "aUEC"
+    },
+    {
+      "id": "lancet-mr1",
+      "name": "Lancet MR1 Mining Head",
+      "type": "mining_head",
+      "description": "A precision mining head for the Multi-Tool offering improved fracturing control. The Lancet MR1 is preferred by experienced miners for its reduced overcharge risk.",
+      "miningMethodId": "fps-mining",
+      "resourceIds": ["laranite", "agricium", "titanite", "gold", "copper"],
+      "obtainMethod": "buy",
+      "vendorIds": ["omega-pro"],
+      "price": 12000,
+      "currency": "aUEC"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "roc",
+      "name": "Argo Mole ROC",
+      "type": "ground",
+      "manufacturer": "Argo Astronautics",
+      "description": "The ROC (Remote Ore Collector) is a compact ground mining vehicle. It fits in the cargo bay of many medium ships and allows efficient surface mining operations on moons and planets.",
+      "miningMethodIds": ["roc-mining"],
+      "resourceIds": ["bexalite", "taranite", "laranite", "agricium", "titanite", "gold", "copper", "borase"],
+      "obtainMethod": "buy",
+      "price": 172100,
+      "currency": "aUEC"
+    },
+    {
+      "id": "prospector",
+      "name": "Drake Prospector",
+      "type": "ship",
+      "manufacturer": "Drake Interplanetary",
+      "description": "The Prospector is a dedicated solo mining ship. It features a powerful mining laser and a 32 SCU cargo hold for storing ore. The go-to ship for independent asteroid miners.",
+      "miningMethodIds": ["ship-mining"],
+      "resourceIds": ["quantanium", "bexalite", "taranite", "laranite", "gold", "diamond"],
+      "obtainMethod": "buy",
+      "price": 2061900,
+      "currency": "aUEC"
+    },
+    {
+      "id": "mole",
+      "name": "Argo MOLE",
+      "type": "ship",
+      "manufacturer": "Argo Astronautics",
+      "description": "The Multi Operator Laser Extractor (MOLE) is a multi-crew mining ship with three independent mining turrets. It carries 96 SCU of cargo and is the most powerful mining ship available in-game.",
+      "miningMethodIds": ["ship-mining"],
+      "resourceIds": ["quantanium", "bexalite", "taranite", "laranite", "gold", "diamond"],
+      "obtainMethod": "buy",
+      "price": 5130000,
+      "currency": "aUEC"
+    },
+    {
+      "id": "nomad",
+      "name": "Consolidated Outland Nomad",
+      "type": "ship",
+      "manufacturer": "Consolidated Outland",
+      "description": "A versatile starter ship with enough cargo space to transport a ROC. The Nomad is a popular choice for mining operations that involve deploying a ROC on planetary surfaces.",
+      "miningMethodIds": [],
+      "resourceIds": [],
+      "obtainMethod": "buy",
+      "price": 1003000,
+      "currency": "aUEC"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "quantanium-processing",
+      "name": "Refined Quantanium",
+      "outputItemId": "quantanium",
+      "outputItemType": "resource",
+      "outputQuantity": 1,
+      "ingredients": [
+        { "itemId": "quantanium", "itemType": "resource", "quantity": 5, "name": "Raw Quantanium" },
+        { "itemId": "titanite", "itemType": "resource", "quantity": 2, "name": "Titanite" }
+      ],
+      "blueprintId": "bp-quantanium",
+      "craftingStation": "Refinery Terminal",
+      "craftingTime": "30 minutes",
+      "description": "Process raw Quantanium ore into refined Quantanium for maximum market value. The unstable nature of Quantanium requires careful handling at a certified refinery."
+    },
+    {
+      "id": "bexalite-component",
+      "name": "Bexalite Energy Cell",
+      "outputItemId": "bexalite-cell",
+      "outputItemType": "component",
+      "outputQuantity": 1,
+      "ingredients": [
+        { "itemId": "bexalite", "itemType": "resource", "quantity": 3, "name": "Bexalite" },
+        { "itemId": "copper", "itemType": "resource", "quantity": 4, "name": "Copper" }
+      ],
+      "blueprintId": "bp-bexalite-cell",
+      "craftingStation": "Industrial Fabricator",
+      "craftingTime": "45 minutes",
+      "description": "Fabricate a high-output energy cell using Bexalite's natural conductivity enhanced with copper wiring."
+    },
+    {
+      "id": "taranite-plate",
+      "name": "Taranite Armor Plate",
+      "outputItemId": "taranite-armor",
+      "outputItemType": "armor",
+      "outputQuantity": 1,
+      "ingredients": [
+        { "itemId": "taranite", "itemType": "resource", "quantity": 8, "name": "Taranite" },
+        { "itemId": "agricium", "itemType": "resource", "quantity": 2, "name": "Agricium" }
+      ],
+      "blueprintId": "bp-taranite-armor",
+      "craftingStation": "Armor Fabricator",
+      "craftingTime": "2 hours",
+      "description": "Craft heavy armor plating using dense Taranite reinforced with Agricium's thermal properties. Results in a durable chest piece with excellent ballistic resistance."
+    },
+    {
+      "id": "agricium-component",
+      "name": "Agricium Cooling Unit",
+      "outputItemId": "agricium-cooler",
+      "outputItemType": "component",
+      "outputQuantity": 2,
+      "ingredients": [
+        { "itemId": "agricium", "itemType": "resource", "quantity": 5, "name": "Agricium" },
+        { "itemId": "titanite", "itemType": "resource", "quantity": 3, "name": "Titanite" }
+      ],
+      "blueprintId": "bp-agricium-cooler",
+      "craftingStation": "Component Fabricator",
+      "craftingTime": "1 hour",
+      "description": "Manufacture advanced cooling units leveraging Agricium's exceptional thermal properties for ship and equipment cooling systems."
+    },
+    {
+      "id": "titanite-alloy",
+      "name": "Titanite Structural Alloy",
+      "outputItemId": "titanite-alloy",
+      "outputItemType": "component",
+      "outputQuantity": 5,
+      "ingredients": [
+        { "itemId": "titanite", "itemType": "resource", "quantity": 10, "name": "Titanite" },
+        { "itemId": "copper", "itemType": "resource", "quantity": 5, "name": "Copper" }
+      ],
+      "blueprintId": null,
+      "craftingStation": "Basic Fabricator",
+      "craftingTime": "20 minutes",
+      "description": "Smelt Titanite ore with copper into a versatile structural alloy used in countless manufacturing processes."
+    }
+  ],
+  "blueprints": [
+    {
+      "id": "bp-quantanium",
+      "name": "Refined Quantanium Blueprint",
+      "recipeId": "quantanium-processing",
+      "description": "Licensed blueprint for processing raw Quantanium at certified refinery terminals. Required to use the Quantanium refining recipe.",
+      "obtainMethod": "buy",
+      "vendorIds": ["cousin-crows"],
+      "lootSourceIds": [],
+      "price": 45000,
+      "currency": "aUEC"
+    },
+    {
+      "id": "bp-bexalite-cell",
+      "name": "Bexalite Energy Cell Blueprint",
+      "recipeId": "bexalite-component",
+      "description": "Engineering schematic for Bexalite-based energy cells. Obtained from specialty fabrication vendors.",
+      "obtainMethod": "buy",
+      "vendorIds": ["omega-pro"],
+      "lootSourceIds": [],
+      "price": 28000,
+      "currency": "aUEC"
+    },
+    {
+      "id": "bp-taranite-armor",
+      "name": "Taranite Armor Plate Blueprint",
+      "recipeId": "taranite-plate",
+      "description": "Certified armor fabrication blueprint for heavy Taranite plating. Can also be found as rare loot in high-risk zones.",
+      "obtainMethod": "loot",
+      "vendorIds": [],
+      "lootSourceIds": ["outlaw-cache-delamar", "pirate-patrol-yela-belt"],
+      "price": null,
+      "currency": null
+    },
+    {
+      "id": "bp-agricium-cooler",
+      "name": "Agricium Cooling Unit Blueprint",
+      "recipeId": "agricium-component",
+      "description": "Technical blueprint for manufacturing Agricium-based cooling units. Available from component fabrication specialists.",
+      "obtainMethod": "buy",
+      "vendorIds": ["new-babbage-vendor"],
+      "lootSourceIds": [],
+      "price": 18500,
+      "currency": "aUEC"
+    }
+  ],
+  "weapons": [
+    {
+      "id": "p4-ar",
+      "name": "P4-AR Assault Rifle",
+      "type": "rifle",
+      "class": "fps",
+      "manufacturer": "Klaus & Werner",
+      "description": "A reliable ballistic assault rifle chambered in high-velocity rounds. The P4-AR is a favorite of mercenaries and security forces for its balance of accuracy and firepower.",
+      "damage": "Medium",
+      "range": "Medium",
+      "fireRate": "High",
+      "magazineSize": 30,
+      "obtainMethods": [
+        { "method": "buy", "vendorId": "arccorp-arms-vendor", "price": 3500, "currency": "aUEC" },
+        { "method": "buy", "vendorId": "hurston-dynamics-vendor", "price": 3500, "currency": "aUEC" },
+        { "method": "loot", "lootSourceId": "npc-security-hurston" }
+      ],
+      "stats": { "dps": 185, "accuracy": 72 },
+      "patch": "3.23"
+    },
+    {
+      "id": "s71",
+      "name": "S71 Assault Rifle",
+      "type": "rifle",
+      "class": "fps",
+      "manufacturer": "Kastak Arms",
+      "description": "The S71 fires powerful laser bolts and is a favorite of outlaws throughout the Stanton system. Its energy-based damage cuts through armor effectively.",
+      "damage": "High",
+      "range": "Medium-High",
+      "fireRate": "Medium",
+      "magazineSize": 25,
+      "obtainMethods": [
+        { "method": "loot", "lootSourceId": "pirate-patrol-yela-belt" },
+        { "method": "loot", "lootSourceId": "npc-pirates-daymar" },
+        { "method": "buy", "vendorId": "omega-pro-arccorp", "price": 5200, "currency": "aUEC" }
+      ],
+      "stats": { "dps": 210, "accuracy": 68 },
+      "patch": "3.23"
+    },
+    {
+      "id": "salvo-shotgun",
+      "name": "Salvo Frag Pistol",
+      "type": "shotgun",
+      "class": "fps",
+      "manufacturer": "Preacher Armament",
+      "description": "A compact semi-automatic shotgun that fires a tight spread of flechettes. Devastating at close range, the Salvo is the preferred weapon for close-quarters operations.",
+      "damage": "Very High",
+      "range": "Short",
+      "fireRate": "Low",
+      "magazineSize": 6,
+      "obtainMethods": [
+        { "method": "buy", "vendorId": "arccorp-arms-vendor", "price": 4800, "currency": "aUEC" },
+        { "method": "loot", "lootSourceId": "cave-cache-daymar" }
+      ],
+      "stats": { "dps": 320, "accuracy": 45 },
+      "patch": "3.23"
+    },
+    {
+      "id": "arc-l1",
+      "name": "ARC-L1 Sniper Rifle",
+      "type": "sniper",
+      "class": "fps",
+      "manufacturer": "Kastak Arms",
+      "description": "A high-powered laser sniper rifle capable of eliminating targets at extreme ranges. The ARC-L1's scope allows precision shots through adverse atmospheric conditions.",
+      "damage": "Extreme",
+      "range": "Very Long",
+      "fireRate": "Very Low",
+      "magazineSize": 8,
+      "obtainMethods": [
+        { "method": "buy", "vendorId": "omega-pro", "price": 12500, "currency": "aUEC" },
+        { "method": "loot", "lootSourceId": "pirate-hideout-yela" }
+      ],
+      "stats": { "dps": 145, "accuracy": 98 },
+      "patch": "3.23"
+    },
+    {
+      "id": "gemini-l86",
+      "name": "Gemini L86 SMG",
+      "type": "smg",
+      "class": "fps",
+      "manufacturer": "Gemini",
+      "description": "A compact submachine gun with exceptional rate of fire. The L86 is small enough to use in a ship cockpit and packs enough punch to deal with most threats in tight spaces.",
+      "damage": "Low-Medium",
+      "range": "Short-Medium",
+      "fireRate": "Very High",
+      "magazineSize": 35,
+      "obtainMethods": [
+        { "method": "buy", "vendorId": "cousin-crows", "price": 2800, "currency": "aUEC" },
+        { "method": "buy", "vendorId": "new-babbage-vendor", "price": 2800, "currency": "aUEC" }
+      ],
+      "stats": { "dps": 195, "accuracy": 62 },
+      "patch": "3.23"
+    },
+    {
+      "id": "behr-p4sc",
+      "name": "Behring P4-SC Pistol",
+      "type": "pistol",
+      "class": "fps",
+      "manufacturer": "Behring",
+      "description": "A standard-issue semi-automatic pistol used by security forces throughout the Empire. The P4-SC offers reliable performance and is widely available across the 'verse.",
+      "damage": "Low",
+      "range": "Short",
+      "fireRate": "Medium",
+      "magazineSize": 12,
+      "obtainMethods": [
+        { "method": "buy", "vendorId": "arccorp-arms-vendor", "price": 950, "currency": "aUEC" },
+        { "method": "buy", "vendorId": "hurston-dynamics-vendor", "price": 950, "currency": "aUEC" },
+        { "method": "buy", "vendorId": "cousin-crows", "price": 950, "currency": "aUEC" },
+        { "method": "loot", "lootSourceId": "npc-security-hurston" }
+      ],
+      "stats": { "dps": 95, "accuracy": 78 },
+      "patch": "3.23"
+    },
+    {
+      "id": "atzkav-plasma",
+      "name": "Atzkav Plasma Rifle",
+      "type": "plasma",
+      "class": "fps",
+      "manufacturer": "Kastak Arms",
+      "description": "A devastating plasma rifle that charges and releases superheated plasma bolts. The Atzkav deals exceptional damage but has a slow charge time and limited magazine.",
+      "damage": "Extreme",
+      "range": "Medium",
+      "fireRate": "Very Low",
+      "magazineSize": 5,
+      "obtainMethods": [
+        { "method": "loot", "lootSourceId": "outlaw-cache-delamar" },
+        { "method": "loot", "lootSourceId": "pirate-patrol-aaron-halo" }
+      ],
+      "stats": { "dps": 280, "accuracy": 85 },
+      "patch": "3.23"
+    }
+  ],
+  "armor": [
+    {
+      "id": "light-ux10",
+      "name": "Light UX-10 Armor Set",
+      "type": "full_set",
+      "class": "light",
+      "manufacturer": "Hurston Dynamics",
+      "description": "A lightweight combat armor set offering basic protection with maximum mobility. The UX-10 is ideal for operatives who need to move fast while maintaining some defense.",
+      "protection": "Low",
+      "obtainMethods": [
+        { "method": "buy", "vendorId": "hurston-dynamics-vendor", "price": 8500, "currency": "aUEC" }
+      ],
+      "stats": { "ballistic_resist": 15, "laser_resist": 12, "speed_penalty": 2 },
+      "patch": "3.23"
+    },
+    {
+      "id": "novikov-medium",
+      "name": "Novikov Medium Armor",
+      "type": "chest",
+      "class": "medium",
+      "manufacturer": "Roberts Space Industries",
+      "description": "A versatile medium chest armor providing balanced protection against multiple damage types. The Novikov series is a common sight on miners and explorers throughout Stanton.",
+      "protection": "Medium",
+      "obtainMethods": [
+        { "method": "buy", "vendorId": "cousin-crows", "price": 5200, "currency": "aUEC" },
+        { "method": "buy", "vendorId": "new-babbage-vendor", "price": 5200, "currency": "aUEC" },
+        { "method": "loot", "lootSourceId": "npc-pirates-daymar" }
+      ],
+      "stats": { "ballistic_resist": 28, "laser_resist": 22, "speed_penalty": 8 },
+      "patch": "3.23"
+    },
+    {
+      "id": "paladin-heavy",
+      "name": "Paladin Heavy Helmet",
+      "type": "helmet",
+      "class": "heavy",
+      "manufacturer": "Kastak Arms",
+      "description": "Military-grade heavy helmet with integrated HUD system and maximum head protection. The Paladin series is used by elite security forces and seasoned combat veterans.",
+      "protection": "High",
+      "obtainMethods": [
+        { "method": "buy", "vendorId": "arccorp-arms-vendor", "price": 6800, "currency": "aUEC" },
+        { "method": "loot", "lootSourceId": "npc-security-hurston" }
+      ],
+      "stats": { "ballistic_resist": 45, "laser_resist": 38, "speed_penalty": 15 },
+      "patch": "3.23"
+    },
+    {
+      "id": "heavy-arms-taranite",
+      "name": "Taranite Heavy Arms",
+      "type": "arms",
+      "class": "heavy",
+      "manufacturer": "Crusader Industries",
+      "description": "Arm armor crafted from dense Taranite plating. Offers exceptional protection for the forearms and upper arms at the cost of some mobility.",
+      "protection": "High",
+      "recipeId": "taranite-plate",
+      "obtainMethods": [
+        { "method": "craft", "notes": "Requires Taranite Armor Plate blueprint" }
+      ],
+      "stats": { "ballistic_resist": 42, "laser_resist": 35, "speed_penalty": 12 },
+      "patch": "3.23"
+    },
+    {
+      "id": "light-scout-undersuit",
+      "name": "Scout Undersuit",
+      "type": "undersuit",
+      "class": "light",
+      "manufacturer": "Consolidated Outland",
+      "description": "A lightweight temperature-regulated undersuit with basic impact protection. Essential for operations in extreme temperature environments like microTech or Hurston.",
+      "protection": "Minimal",
+      "obtainMethods": [
+        { "method": "buy", "vendorId": "new-babbage-vendor", "price": 1200, "currency": "aUEC" },
+        { "method": "buy", "vendorId": "recco-outpost-vendor", "price": 1200, "currency": "aUEC" }
+      ],
+      "stats": { "ballistic_resist": 5, "temp_resist": 40, "speed_penalty": 0 },
+      "patch": "3.23"
+    },
+    {
+      "id": "medium-legs-novikov",
+      "name": "Novikov Medium Legs",
+      "type": "legs",
+      "class": "medium",
+      "manufacturer": "Roberts Space Industries",
+      "description": "Medium-weight leg armor from the Novikov series. Provides balanced protection for the lower body and pairs well with other Novikov armor pieces.",
+      "protection": "Medium",
+      "obtainMethods": [
+        { "method": "buy", "vendorId": "cousin-crows", "price": 3800, "currency": "aUEC" },
+        { "method": "loot", "lootSourceId": "npc-pirates-daymar" }
+      ],
+      "stats": { "ballistic_resist": 25, "laser_resist": 20, "speed_penalty": 6 },
+      "patch": "3.23"
+    }
+  ],
+  "vendors": [
+    {
+      "id": "cousin-crows",
+      "name": "Cousin Crow's Custom Craft",
+      "type": "shop",
+      "locationId": "crusader",
+      "description": "A renowned custom weapons and equipment shop at Orison on Crusader. Cousin Crow's offers a wide selection of quality weapons, armor, and mining equipment.",
+      "inventoryIds": ["multitool-orex", "multitool-oremax", "prospector-laser", "mole-laser", "behr-p4sc", "gemini-l86", "novikov-medium", "medium-legs-novikov"],
+      "inventoryTypes": ["weapon", "armor", "tool"]
+    },
+    {
+      "id": "omega-pro",
+      "name": "Omega Pro Mining Equipment",
+      "type": "shop",
+      "locationId": "crusader",
+      "description": "Specializing in mining equipment and tools, Omega Pro offers the best selection of mining gear in the Stanton system. Find everything from basic multi-tools to advanced ship modules.",
+      "inventoryIds": ["multitool-orex", "multitool-oremax", "lancet-mr1", "bp-bexalite-cell"],
+      "inventoryTypes": ["tool", "blueprint"]
+    },
+    {
+      "id": "omega-pro-arccorp",
+      "name": "Omega Pro (ArcCorp Branch)",
+      "type": "shop",
+      "locationId": "arccorp",
+      "description": "The ArcCorp branch of Omega Pro, located in Area18. Carries a similar selection to the main store with some ArcCorp-exclusive items.",
+      "inventoryIds": ["multitool-orex", "s71"],
+      "inventoryTypes": ["tool", "weapon"]
+    },
+    {
+      "id": "arccorp-arms-vendor",
+      "name": "ArcCorp Arms",
+      "type": "shop",
+      "locationId": "arccorp",
+      "description": "ArcCorp's premier weapons dealer located in Area18. Stocks a comprehensive range of ballistic and energy weapons for all combat styles.",
+      "inventoryIds": ["p4-ar", "salvo-shotgun", "behr-p4sc", "paladin-heavy"],
+      "inventoryTypes": ["weapon", "armor"]
+    },
+    {
+      "id": "hurston-dynamics-vendor",
+      "name": "Hurston Dynamics Showcase",
+      "type": "shop",
+      "locationId": "hurston",
+      "description": "Hurston Dynamics' own showroom in Lorville. Features all Hurston Dynamics manufactured weapons and armor at competitive prices.",
+      "inventoryIds": ["p4-ar", "behr-p4sc", "light-ux10"],
+      "inventoryTypes": ["weapon", "armor"]
+    },
+    {
+      "id": "new-babbage-vendor",
+      "name": "New Babbage Equipment Store",
+      "type": "shop",
+      "locationId": "microtech",
+      "description": "A well-stocked general equipment store in New Babbage on microTech. Carries mining tools, weapons, armor, and blueprints.",
+      "inventoryIds": ["multitool-orex", "gemini-l86", "novikov-medium", "light-scout-undersuit", "bp-agricium-cooler"],
+      "inventoryTypes": ["weapon", "armor", "tool", "blueprint"]
+    },
+    {
+      "id": "recco-outpost-vendor",
+      "name": "Recco's Outpost Supply",
+      "type": "kiosk",
+      "locationId": "daymar",
+      "description": "A small supply kiosk at Recco's Outpost on Daymar. Stocks basic supplies, ammunition, and some armor pieces for surface operations.",
+      "inventoryIds": ["light-scout-undersuit"],
+      "inventoryTypes": ["armor", "consumable"]
+    }
+  ],
+  "lootSources": [
+    {
+      "id": "cave-cache-daymar",
+      "name": "Daymar Cave Cache",
+      "type": "cave_cache",
+      "locationId": "daymar",
+      "description": "Hidden stashes found in the cave systems beneath Daymar's surface. These caches often contain weapons, armor pieces, and occasionally rare materials left behind by miners or outlaws.",
+      "possibleItemIds": ["salvo-shotgun", "behr-p4sc", "light-scout-undersuit", "titanite", "copper"],
+      "riskLevel": "low"
+    },
+    {
+      "id": "npc-pirates-daymar",
+      "name": "Daymar Pirate Patrol",
+      "type": "enemy",
+      "locationId": "daymar",
+      "description": "Organized pirate groups that patrol Daymar's surface, targeting lone miners and travelers. Defeating them yields their carried weapons and armor.",
+      "possibleItemIds": ["s71", "novikov-medium", "medium-legs-novikov", "behr-p4sc"],
+      "riskLevel": "medium"
+    },
+    {
+      "id": "pirate-patrol-yela-belt",
+      "name": "Yela Belt Pirate Ships",
+      "type": "enemy",
+      "locationId": "yela-belt",
+      "description": "Pirate ships that ambush miners in the Yela Asteroid Belt. Destroying their ships and boarding their hulks can yield weapons, rare armor, and even blueprints.",
+      "possibleItemIds": ["s71", "atzkav-plasma", "bp-taranite-armor"],
+      "riskLevel": "high"
+    },
+    {
+      "id": "pirate-hideout-yela",
+      "name": "Yela Pirate Hideout",
+      "type": "container",
+      "locationId": "yela",
+      "description": "A fortified pirate camp on Yela's surface. Breaking through the defenses rewards players with high-tier loot including rare weapons and equipment.",
+      "possibleItemIds": ["arc-l1", "s71", "paladin-heavy"],
+      "riskLevel": "high"
+    },
+    {
+      "id": "derelict-yela",
+      "name": "Yela Derelict Ship",
+      "type": "derelict",
+      "locationId": "yela",
+      "description": "Abandoned and derelict ships drifting through Yela's orbit. These hulks sometimes contain valuable cargo and equipment left behind by their previous crews.",
+      "possibleItemIds": ["novikov-medium", "behr-p4sc", "titanite", "copper"],
+      "riskLevel": "low"
+    },
+    {
+      "id": "outlaw-cache-delamar",
+      "name": "Delamar Outlaw Cache",
+      "type": "container",
+      "locationId": "delamar",
+      "description": "Heavily guarded supply caches maintained by outlaw organizations on Delamar. Contains rare and high-value items including weapons, armor, and blueprints.",
+      "possibleItemIds": ["atzkav-plasma", "bp-taranite-armor", "arc-l1"],
+      "riskLevel": "extreme"
+    },
+    {
+      "id": "npc-security-hurston",
+      "name": "Hurston Security Forces",
+      "type": "enemy",
+      "locationId": "hurston",
+      "description": "Hurston Dynamics security personnel patrolling Hurston and its moons. They carry standard-issue Behring and Hurston Dynamics equipment.",
+      "possibleItemIds": ["p4-ar", "behr-p4sc", "paladin-heavy"],
+      "riskLevel": "medium"
+    },
+    {
+      "id": "cave-cache-cellin",
+      "name": "Cellin Cave Cache",
+      "type": "cave_cache",
+      "locationId": "cellin",
+      "description": "Mineral caches hidden deep in Cellin's cave systems, formed by volcanic activity trapping material. May contain rare ores and occasional equipment.",
+      "possibleItemIds": ["taranite", "laranite", "borase"],
+      "riskLevel": "medium"
+    },
+    {
+      "id": "pirate-patrol-aaron-halo",
+      "name": "Aaron Halo Pirate Fleet",
+      "type": "enemy",
+      "locationId": "aaron-halo",
+      "description": "Large pirate fleets that operate in the Aaron Halo asteroid belt. Extremely dangerous, but taking them down yields some of the rarest loot in the system.",
+      "possibleItemIds": ["atzkav-plasma", "s71", "arc-l1", "bp-taranite-armor"],
+      "riskLevel": "extreme"
+    }
+  ]
+}
