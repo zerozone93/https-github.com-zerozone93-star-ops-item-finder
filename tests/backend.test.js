@@ -43,6 +43,67 @@ test("serves app data from the backend API", async () => {
   assert.equal(payload.selectedItem.name, "Kastak Arms Devastator Shotgun");
 });
 
+test("serves the normalized star citizen catalog", async () => {
+  const response = await fetch(`${baseUrl}/api/catalog`);
+  const payload = await response.json();
+
+  assert.equal(response.status, 200);
+  assert.equal(payload.items.length, 10);
+  assert.equal(payload.locations.length, 5);
+  assert.equal(payload.components.length, 3);
+  assert.equal(payload.crafting.recipes.length, 2);
+  assert.equal(payload.mining.resources.length, 2);
+});
+
+test("filters normalized items and locations", async () => {
+  const [itemsResponse, locationsResponse] = await Promise.all([
+    fetch(`${baseUrl}/api/items?category=attachment&q=scope`),
+    fetch(`${baseUrl}/api/locations?itemId=attachment-behring-p8-ar-scope-mk-ii`),
+  ]);
+
+  const itemsPayload = await itemsResponse.json();
+  const locationsPayload = await locationsResponse.json();
+
+  assert.equal(itemsResponse.status, 200);
+  assert.equal(itemsPayload.meta.count, 1);
+  assert.equal(itemsPayload.data[0].name, "Behring P8-AR Scope Mk II");
+
+  assert.equal(locationsResponse.status, 200);
+  assert.equal(locationsPayload.meta.count, 1);
+  assert.equal(locationsPayload.data[0].name, "New Babbage Commons");
+});
+
+test("serves component, crafting, mining, and source endpoints", async () => {
+  const [componentsResponse, craftingResponse, miningResponse, sourcesResponse] = await Promise.all([
+    fetch(`${baseUrl}/api/components?type=quantum-drive`),
+    fetch(`${baseUrl}/api/crafting?outputItemId=ship-component-js-400-power-plant`),
+    fetch(`${baseUrl}/api/mining?region=Aaron%20Halo`),
+    fetch(`${baseUrl}/api/sources`),
+  ]);
+
+  const componentsPayload = await componentsResponse.json();
+  const craftingPayload = await craftingResponse.json();
+  const miningPayload = await miningResponse.json();
+  const sourcesPayload = await sourcesResponse.json();
+
+  assert.equal(componentsResponse.status, 200);
+  assert.equal(componentsPayload.meta.count, 1);
+  assert.equal(componentsPayload.data[0].name, "VK-00 Quantum Drive");
+
+  assert.equal(craftingResponse.status, 200);
+  assert.equal(craftingPayload.meta.count, 1);
+  assert.equal(craftingPayload.data[0].facility, "Station engineering workshop");
+
+  assert.equal(miningResponse.status, 200);
+  assert.equal(miningPayload.meta.count, 1);
+  assert.equal(miningPayload.data[0].name, "Quantanium");
+
+  assert.equal(sourcesResponse.status, 200);
+  assert.equal(sourcesPayload.meta.count, 7);
+  assert.equal(sourcesPayload.data[0].id, "local-catalog");
+  assert.equal(sourcesPayload.data[1].status, "disabled");
+});
+
 test("serves the existing static frontend through the backend", async () => {
   const [indexResponse, stylesResponse] = await Promise.all([
     fetch(`${baseUrl}/`),

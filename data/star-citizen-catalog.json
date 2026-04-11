@@ -1,0 +1,388 @@
+{
+  "meta": {
+    "name": "Star Ops canonical Star Citizen catalog",
+    "version": "1.0.0",
+    "updatedAt": "2026-04-11T08:19:07.490Z"
+  },
+  "items": [
+    {
+      "id": "weapon-kastak-devastator-shotgun",
+      "name": "Kastak Arms Devastator Shotgun",
+      "category": "weapon",
+      "subcategory": "shotgun",
+      "manufacturer": "Kastak Arms",
+      "description": "Close-range ballistic shotgun commonly stocked by major weapon shops.",
+      "tags": ["fps", "ballistic", "close-range"],
+      "sourceIds": ["local-catalog"]
+    },
+    {
+      "id": "attachment-behring-p8-ar-scope-mk-ii",
+      "name": "Behring P8-AR Scope Mk II",
+      "category": "attachment",
+      "subcategory": "optic",
+      "manufacturer": "Behring",
+      "description": "Medium zoom optic for common rifle rails and attachment slots.",
+      "tags": ["fps", "optic", "weapon-attachment"],
+      "sourceIds": ["local-catalog"]
+    },
+    {
+      "id": "armor-pembroke-core",
+      "name": "Pembroke Explorer Core",
+      "category": "armor",
+      "subcategory": "torso",
+      "manufacturer": "Caldera",
+      "description": "Heat-resistant heavy armor favored by miners working extreme environments.",
+      "tags": ["fps", "armor", "mining"],
+      "sourceIds": ["local-catalog"]
+    },
+    {
+      "id": "medical-greycat-medpen-twin-pack",
+      "name": "Greycat MedPen Twin Pack",
+      "category": "medical",
+      "subcategory": "consumable",
+      "manufacturer": "Greycat",
+      "description": "Two-pack medical injector used for quick field recovery.",
+      "tags": ["medical", "consumable"],
+      "sourceIds": ["local-catalog"]
+    },
+    {
+      "id": "ship-component-vk-00-quantum-drive",
+      "name": "VK-00 Quantum Drive",
+      "category": "ship-component",
+      "subcategory": "quantum-drive",
+      "manufacturer": "Wei-Tek",
+      "description": "Fast military-grade size 1 quantum drive.",
+      "tags": ["ship", "component", "travel"],
+      "size": 1,
+      "grade": "A",
+      "sourceIds": ["local-catalog"]
+    },
+    {
+      "id": "ship-component-js-400-power-plant",
+      "name": "JS-400 Power Plant",
+      "category": "ship-component",
+      "subcategory": "power-plant",
+      "manufacturer": "Juno Starwerk",
+      "description": "Size 1 ship power plant with strong output for light fighters.",
+      "tags": ["ship", "component", "power"],
+      "size": 1,
+      "grade": "A",
+      "sourceIds": ["local-catalog"]
+    },
+    {
+      "id": "ship-component-fr-66-shield-generator",
+      "name": "FR-66 Shield Generator",
+      "category": "ship-component",
+      "subcategory": "shield-generator",
+      "manufacturer": "Firestorm",
+      "description": "Size 2 industrial shield generator with strong durability.",
+      "tags": ["ship", "component", "defense"],
+      "size": 2,
+      "grade": "A",
+      "sourceIds": ["local-catalog"]
+    },
+    {
+      "id": "mineral-quantanium",
+      "name": "Quantanium",
+      "category": "mining-resource",
+      "subcategory": "ore",
+      "manufacturer": null,
+      "description": "Highly volatile ore prized for strong refinery returns.",
+      "tags": ["mining", "ore", "volatile"],
+      "sourceIds": ["local-catalog"]
+    },
+    {
+      "id": "mineral-bexalite",
+      "name": "Bexalite",
+      "category": "mining-resource",
+      "subcategory": "ore",
+      "manufacturer": null,
+      "description": "High-value ore often paired with refinery runs from asteroid belts.",
+      "tags": ["mining", "ore"],
+      "sourceIds": ["local-catalog"]
+    },
+    {
+      "id": "material-quantum-stabilizer",
+      "name": "Quantum Stabilizer Composite",
+      "category": "crafting-material",
+      "subcategory": "refined-material",
+      "manufacturer": null,
+      "description": "Refined material used in community-tracked component crafting chains.",
+      "tags": ["crafting", "material", "refined"],
+      "sourceIds": ["local-catalog"]
+    }
+  ],
+  "locations": [
+    {
+      "id": "new-babbage-commons",
+      "name": "New Babbage Commons",
+      "system": "Stanton",
+      "body": "microTech",
+      "kind": "city-district",
+      "services": ["weapons", "armor", "attachments"],
+      "notes": "Common stop for personal gear and weapon accessory shopping.",
+      "sourceIds": ["local-catalog"],
+      "inventories": [
+        {
+          "itemId": "attachment-behring-p8-ar-scope-mk-ii",
+          "buyPrice": 1950,
+          "sellPrice": 2280,
+          "stock": 43,
+          "currency": "aUEC",
+          "availability": "in_stock",
+          "lastSeenAt": "2026-04-11T08:00:00.000Z"
+        },
+        {
+          "itemId": "armor-pembroke-core",
+          "buyPrice": 12800,
+          "sellPrice": null,
+          "stock": 6,
+          "currency": "aUEC",
+          "availability": "limited",
+          "lastSeenAt": "2026-04-11T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "port-tressler-clinic",
+      "name": "Port Tressler Clinic Kiosk",
+      "system": "Stanton",
+      "body": "microTech orbit",
+      "kind": "station",
+      "services": ["medical"],
+      "notes": "Fast pickup point for medical consumables.",
+      "sourceIds": ["local-catalog"],
+      "inventories": [
+        {
+          "itemId": "medical-greycat-medpen-twin-pack",
+          "buyPrice": 220,
+          "sellPrice": null,
+          "stock": 120,
+          "currency": "aUEC",
+          "availability": "in_stock",
+          "lastSeenAt": "2026-04-11T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "orison-crusader-showroom",
+      "name": "Orison Crusader Showroom",
+      "system": "Stanton",
+      "body": "Crusader",
+      "kind": "city-store",
+      "services": ["weapons", "ship-components"],
+      "notes": "Common buy location for FPS gear and light ship upgrades.",
+      "sourceIds": ["local-catalog"],
+      "inventories": [
+        {
+          "itemId": "weapon-kastak-devastator-shotgun",
+          "buyPrice": 2450,
+          "sellPrice": null,
+          "stock": 19,
+          "currency": "aUEC",
+          "availability": "in_stock",
+          "lastSeenAt": "2026-04-11T08:00:00.000Z"
+        },
+        {
+          "itemId": "ship-component-js-400-power-plant",
+          "buyPrice": 72000,
+          "sellPrice": null,
+          "stock": 3,
+          "currency": "aUEC",
+          "availability": "limited",
+          "lastSeenAt": "2026-04-11T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "grimhex-weapons-depot",
+      "name": "GrimHEX Weapons Depot",
+      "system": "Stanton",
+      "body": "Yela asteroid belt",
+      "kind": "station",
+      "services": ["weapons", "attachments", "armor"],
+      "notes": "Known resale point for popular FPS loadout items.",
+      "sourceIds": ["local-catalog"],
+      "inventories": [
+        {
+          "itemId": "weapon-kastak-devastator-shotgun",
+          "buyPrice": 2880,
+          "sellPrice": 2880,
+          "stock": 8,
+          "currency": "aUEC",
+          "availability": "in_stock",
+          "lastSeenAt": "2026-04-11T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "cru-l1-refinery",
+      "name": "CRU-L1 Ambitious Dream Station",
+      "system": "Stanton",
+      "body": "Lagrange point CRU-L1",
+      "kind": "refinery-station",
+      "services": ["refinery", "mining", "ship-components"],
+      "notes": "Refinery stop with mining support and component resale traffic.",
+      "sourceIds": ["local-catalog"],
+      "inventories": [
+        {
+          "itemId": "ship-component-vk-00-quantum-drive",
+          "buyPrice": 43750,
+          "sellPrice": null,
+          "stock": 4,
+          "currency": "aUEC",
+          "availability": "limited",
+          "lastSeenAt": "2026-04-11T08:00:00.000Z"
+        },
+        {
+          "itemId": "ship-component-fr-66-shield-generator",
+          "buyPrice": 68400,
+          "sellPrice": null,
+          "stock": 2,
+          "currency": "aUEC",
+          "availability": "limited",
+          "lastSeenAt": "2026-04-11T08:00:00.000Z"
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "id": "component-vk-00",
+      "itemId": "ship-component-vk-00-quantum-drive",
+      "name": "VK-00 Quantum Drive",
+      "type": "quantum-drive",
+      "size": 1,
+      "grade": "A",
+      "powerDraw": 950,
+      "coolingRate": 210,
+      "durability": 1450,
+      "sourceIds": ["local-catalog"]
+    },
+    {
+      "id": "component-js-400",
+      "itemId": "ship-component-js-400-power-plant",
+      "name": "JS-400 Power Plant",
+      "type": "power-plant",
+      "size": 1,
+      "grade": "A",
+      "powerDraw": 3200,
+      "coolingRate": 125,
+      "durability": 1800,
+      "sourceIds": ["local-catalog"]
+    },
+    {
+      "id": "component-fr-66",
+      "itemId": "ship-component-fr-66-shield-generator",
+      "name": "FR-66 Shield Generator",
+      "type": "shield-generator",
+      "size": 2,
+      "grade": "A",
+      "powerDraw": 2875,
+      "coolingRate": 140,
+      "durability": 2600,
+      "sourceIds": ["local-catalog"]
+    }
+  ],
+  "crafting": {
+    "recipes": [
+      {
+        "id": "recipe-quantum-stabilizer-composite",
+        "outputItemId": "material-quantum-stabilizer",
+        "facility": "Portable crafting bench",
+        "outputAmount": 1,
+        "inputs": [
+          {
+            "itemId": "mineral-quantanium",
+            "amount": 2
+          },
+          {
+            "itemId": "mineral-bexalite",
+            "amount": 1
+          }
+        ],
+        "notes": "Community-tracked prototype chain used for component upgrade planning.",
+        "sourceIds": ["local-catalog"]
+      },
+      {
+        "id": "recipe-js-400-service-kit",
+        "outputItemId": "ship-component-js-400-power-plant",
+        "facility": "Station engineering workshop",
+        "outputAmount": 1,
+        "inputs": [
+          {
+            "itemId": "material-quantum-stabilizer",
+            "amount": 2
+          },
+          {
+            "itemId": "mineral-bexalite",
+            "amount": 2
+          }
+        ],
+        "notes": "Reference blueprint format for future component crafting ingestion.",
+        "sourceIds": ["local-catalog"]
+      }
+    ]
+  },
+  "mining": {
+    "resources": [
+      {
+        "id": "resource-quantanium",
+        "itemId": "mineral-quantanium",
+        "name": "Quantanium",
+        "resourceType": "ore",
+        "locations": [
+          {
+            "locationId": "cru-l1-refinery",
+            "region": "Aaron Halo",
+            "notes": "Best tracked return when hauling back to nearby refinery stations."
+          },
+          {
+            "locationId": null,
+            "region": "Lyria",
+            "notes": "High-risk surface deposits with volatile extraction windows."
+          }
+        ],
+        "refinery": [
+          {
+            "method": "Dinyx Solventation",
+            "yieldPercent": 86,
+            "durationMinutes": 18
+          },
+          {
+            "method": "Pyrometric Chromalysis",
+            "yieldPercent": 83,
+            "durationMinutes": 14
+          }
+        ],
+        "sourceIds": ["local-catalog"]
+      },
+      {
+        "id": "resource-bexalite",
+        "itemId": "mineral-bexalite",
+        "name": "Bexalite",
+        "resourceType": "ore",
+        "locations": [
+          {
+            "locationId": null,
+            "region": "Aberdeen",
+            "notes": "Surface node routes often mixed with agricium and taranite."
+          },
+          {
+            "locationId": "cru-l1-refinery",
+            "region": "Yela asteroid belt",
+            "notes": "Common refinery handoff after belt mining loops."
+          }
+        ],
+        "refinery": [
+          {
+            "method": "Ferron Exchange",
+            "yieldPercent": 84,
+            "durationMinutes": 12
+          }
+        ],
+        "sourceIds": ["local-catalog"]
+      }
+    ]
+  }
+}
