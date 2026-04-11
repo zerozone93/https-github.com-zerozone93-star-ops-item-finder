@@ -33,6 +33,7 @@ function getQueryFilters(url) {
     grade: url.searchParams.get("grade"),
     itemId: url.searchParams.get("itemId"),
     locationId: url.searchParams.get("locationId"),
+    outputItemId: url.searchParams.get("outputItemId"),
     q: url.searchParams.get("q"),
     region: url.searchParams.get("region"),
     resourceType: url.searchParams.get("resourceType"),
