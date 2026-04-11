@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Star Citizen helper for people in the verse to find what you need",
   "scripts": {
-    "test": "echo \"No tests configured\""
+    "test": "echo \"No tests configured\" && exit 0"
   },
   "repository": {
     "type": "git",
