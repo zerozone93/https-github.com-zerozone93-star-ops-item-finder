@@ -8,6 +8,7 @@ This repository now includes a working local browser app for a cleaner game-styl
 
 ### Open locally
 
+- Use Node.js 18 or newer so the backend connectors can rely on the built-in `fetch` API
 - `npm start` runs the backend at `http://127.0.0.1:3000`
 - Open `http://127.0.0.1:3000` in a browser to use the test environment
 - The frontend loads live data from the backend APIs so you can search items, change filters, inspect availability, and review crafting/mining/component details without publishing the app

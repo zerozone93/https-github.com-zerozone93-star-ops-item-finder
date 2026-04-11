@@ -36,7 +36,7 @@
       return "N/A";
     }
 
-    return `${Number(value).toLocaleString()} aUEC`;
+    return `${Number(value).toLocaleString("en-US")} aUEC`;
   }
 
   function formatCategory(value) {
