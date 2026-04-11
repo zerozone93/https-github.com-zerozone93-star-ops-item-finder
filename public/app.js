@@ -20,12 +20,20 @@ function renderItems(items) {
   items.forEach((item) => {
     const listItem = document.createElement('li');
     listItem.className = 'item-card';
-    listItem.innerHTML = `
-      <h3>${item.name}</h3>
-      <p><strong>Category:</strong> ${item.category}</p>
-      <p><strong>Location:</strong> ${item.location}</p>
-      <p><strong>Price:</strong> ${item.price} aUEC</p>
-    `;
+
+    const title = document.createElement('h3');
+    title.textContent = item.name;
+
+    const category = document.createElement('p');
+    category.textContent = `Category: ${item.category}`;
+
+    const location = document.createElement('p');
+    location.textContent = `Location: ${item.location}`;
+
+    const price = document.createElement('p');
+    price.textContent = `Price: ${item.price} aUEC`;
+
+    listItem.append(title, category, location, price);
     resultsList.appendChild(listItem);
   });
 }
